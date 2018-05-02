@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>V-bind</title>、
+    <style>
+
+    </style>
+</head>
+<script src="../js/vue.js"></script>
+<body>
+<div id="app">
+   <p v-pre>{{message}}</p>
+</div>
+<p>单选框，复选框的原理在于改变的value值实现了双向数据绑定</p>
+<!--v-bind 绑定属性值 可以通过简单的判断来实现不同样式-->
+<script>
+    var app=new Vue({
+        el:"#app",
+        data:{
+            message:"hahhah",
+            imgSrc:'https://img01.sogoucdn.com/app/a/100520024/89f5d1ec7c482db5790ec619c2b2af46',
+            classDate:"",
+            big:"big",
+            min:"min",
+            isTrue:true
+        }
+    })
+</script>
+</body>
+</html>
